@@ -1,0 +1,9 @@
+img {
+    object-fit: cover;
+    width: 90%;
+    max-height: 90%;
+    padding: .8rem;
+    filter: grayscale(1) contrast(1.5) sepia(.5);    
+    align-self: center;
+    justify-self: center;
+}

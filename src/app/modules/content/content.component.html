@@ -1,0 +1,12 @@
+
+<div class="left">
+    <ng-container *ngFor="let n of notes | async; let i = index">
+        <app-short-news *ngIf="0 === i % 2" [title]="n.Title" [description]="n.Description"></app-short-news>
+    </ng-container>
+</div>
+<app-first-page [articles]="articles"></app-first-page>
+<div class="right">
+    <ng-container *ngFor="let n of notes | async; let i = index">
+        <app-short-news *ngIf="1 === i % 2" [title]="n.Title" [description]="n.Description"></app-short-news>
+    </ng-container>
+</div>

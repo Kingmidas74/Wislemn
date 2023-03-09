@@ -1,0 +1,5 @@
+<button> &lt; </button>
+<ng-container *ngFor="let item of [].constructor((articles | async)?.length); let i = index">
+    <button *ngIf="i != 0" (click)="selectArticle(i)">{{i}}</button>
+</ng-container>
+<button> &gt; </button>

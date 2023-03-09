@@ -1,0 +1,64 @@
+header {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 auto;
+
+  $small: 800px;
+  $medium: 900px;
+
+  @media screen and (max-width: $small) {
+    display: none;
+  }
+
+
+  h1 {
+    font-size: 2.2rem;
+    line-height: 3.4rem;
+    margin-bottom: 0;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: luke-thin-200, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+  }
+
+  blockquote {
+    width: 100%;
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    font-weight: 100;
+    font-size: .8rem;
+    line-height: 1.4;
+    position: relative;
+    margin: 0;
+    padding: .5rem;
+
+
+  }
+
+  .strapline {
+    width: 100%;
+    padding: 2px 0px;
+    margin-top: 5px;
+    border-block-end: #2f2f2f 2px solid;
+    border-block-start: #2f2f2f 2px solid;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+
+    h2 {
+      font-family: arial;
+      text-transform: uppercase;
+      font-size: 0.8em;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+    }
+  }
+}

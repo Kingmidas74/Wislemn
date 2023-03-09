@@ -1,0 +1,13 @@
+:host {
+    display: flex;
+    flex-direction: row;
+
+    button {
+        cursor: pointer;
+        flex: 1 1 auto;
+        text-align: center;
+
+        background-color: transparent;
+        border: none;
+    }
+}

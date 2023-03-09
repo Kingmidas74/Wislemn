@@ -1,0 +1,13 @@
+.weather-info-border{
+    border: 3px double #2f2f2f;
+    padding: 10px 15px 10px 15px;
+
+    display: inline-block;
+    
+    display: flex;
+    flex-direction: column;
+
+    &>span:first-child {
+        font-style: italic;
+    }
+}

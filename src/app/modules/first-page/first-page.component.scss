@@ -1,0 +1,48 @@
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+
+    h2 {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        font-weight: 400;
+        font-style: italic;
+        font-family: "Playfair Display", serif;
+    }
+
+    app-image {
+        align-self: center;
+        justify-self: center;
+        display: grid;
+    }
+
+    blockquote {
+        width: 100%;
+        text-align: left;
+        font-family: 'Special Elite', cursive;
+        font-weight: 100;
+        font-size: .9rem;
+        line-height: 1.4;
+        position: relative;
+        margin: 0;
+        padding: .5rem;
+    }
+
+    p {
+        text-align: justify;
+
+        &:last-of-type {
+            border-block-end: #2f2f2f 2px solid;
+        }
+    }
+
+    app-pager {
+        margin-block-end: 3rem;
+        margin-block-start: 2rem;
+        align-self: stretch;
+        justify-self: stretch;
+
+    }
+}

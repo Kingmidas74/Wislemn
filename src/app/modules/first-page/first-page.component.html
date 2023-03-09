@@ -1,0 +1,13 @@
+<ng-template #articleTemplate let-article="article">
+    <ng-container *ngIf="article">
+        <h2>{{article.Title}}</h2>
+        <app-image [src]="article.Image" alt="cola" />
+
+        <section [innerHtml]="article.Content | base64 | safeHtml"></section>
+    </ng-container>
+</ng-template>
+
+<article *ngIf="articles | async">
+    <ng-container *ngTemplateOutlet="articleTemplate;context:{article: (articles | async)?.[currentArticleNumber]}"></ng-container>
+    <app-pager [articles]="articles" [current]="currentArticleNumber" (select)="loadArticle($event)" />
+</article>
